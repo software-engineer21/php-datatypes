@@ -29,3 +29,32 @@
 		echo "</tr>";
 		}
 	echo "</table>";
+
+	?>
+
+
+<?php 
+
+	
+	$infos = [
+		[1, 'Jhon', 'CSE', 'Dhaka'],
+		[2, 'Doe', 'EEE', 'Barisal'],
+		[3, 'Steave', 'Sociology', 'Chittagong'],
+		[4, 'Tanvir', 'Physics', 'Sylhet']
+	];
+
+	echo '
+		<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Depertment</th>
+			<th>Place</th>
+		</tr>
+	';
+
+	foreach ($infos as list($id, $name, $dept, $place)){
+		echo '<tr> <td>' . $id . '</td> <td>' . $name . '</td> <td>' . $dept . '</td> <td> ' . $place . '</td> </tr>';
+	}
+
+	echo '</table>';
